@@ -1,12 +1,24 @@
-const { Client, IntentsBitField, Routes, REST} = require('discord.js')
+const { Client, IntentsBitField, Routes, REST, EmbedBuilder } = require('discord.js')
 require('dotenv/config')
 
 const ping = {
     name: 'ping',
     description: 'Pings the bot and shows the latency'
 };
+const userinfo = {
+    name:'userinfo',
+    description:'get user information',
+    options: [
+        {
+            name: "user",
+            description: "The user to get",
+            type: 6, // 6 is type USER
+            required: false
+        },
+    ]
+  }
   
-const commands = [ping];
+const commands = [ping, userinfo];
 
 const client = new Client({
     intents : [
@@ -41,6 +53,34 @@ client.on('interactionCreate', async interaction => {
     if (interaction.commandName === 'ping') {
         await interaction.reply(`Latency is ${Date.now() - interaction.createdTimestamp}ms. API Latency is ${Math.round(client.ws.ping)}ms`);  
     }
+
+    if (interaction.commandName === "userinfo"){
+        const user =  interaction.options.getUser('user') ||  interaction.user;
+        const member = await interaction.guild.members.fetch(user.id)
+        const icon = user.displayAvatarURL();
+        const tag = user.tag
+
+        const ember = new EmbedBuilder()
+        .setColor("Blue")
+        .setAuthor({name: tag, iconURL: icon})
+        .setThumbnail(icon)
+        .addFields({name: "Member", value: `${user} - ${member.displayName}`, inline: false})
+        .addFields({name: "Roles", value: `${member.roles.cache.map(r => r).join(' ')}`, inline: false})
+        .addFields({name: "Joined Server", value: `<t:${parseInt(member.joinedAt / 1000)}:R>`, inline: true})
+        .addFields({name: "Joined Discord", value: `<t:${parseInt(user.createdAt / 1000)}:R>`, inline: true})
+        .setFooter({text: `User ID : ${user.id}`})
+        .setTimestamp()
+
+        await interaction.reply({embeds: [ember]})
+    }
 });
+
+client.on('messageCreate', message => {
+    if (message.content === 'hello') {
+        message.reply('yow')
+    }
+})
+
+
 
 client.login(process.env.TOKEN)
