@@ -23,7 +23,7 @@ module.exports = {
         .setColor("Blue")
         .setAuthor({name: tag, iconURL: icon})
         .setThumbnail(icon)
-        .addFields({name: "Member", value: `${user} - ${member.displayName}`, inline: false})
+        .addFields({name: "Member", value: `${user}`, inline: false})
         .addFields({name: "Roles", value: `${member.roles.cache.map(r => r).join(' ')}`, inline: false})
         .addFields({name: "Joined Server", value: `<t:${parseInt(member.joinedAt / 1000)}:R>`, inline: true})
         .addFields({name: "Joined Discord", value: `<t:${parseInt(user.createdAt / 1000)}:R>`, inline: true})
