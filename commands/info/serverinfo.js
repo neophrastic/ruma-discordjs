@@ -12,6 +12,14 @@ module.exports = {
         const roles = guild.roles.cache.size
         const emojis = guild.emojis.cache.size
 
+        // verification level
+        let verification = guild.verificationLevel
+        if (verification === 0) verification = 'None'
+        if (verification === 1) verification = 'Low'
+        if (verification === 2) verification = 'Medium'
+        if (verification === 3) verification = 'High'
+        if (verification === 4) verification = 'Very High'
+
         const embed = new EmbedBuilder()
             .setColor("Random")
             .setAuthor({name: guild.name, iconURL:icon})
@@ -22,6 +30,7 @@ module.exports = {
             .addFields({name: 'Server member', value: `${memberCount}`, inline: true})
             .addFields({name: 'Role number', value: `${roles}`, inline: true})
             .addFields({name: 'Emoji number', value: `${emojis}`, inline: true})
+            .addFields({name: 'Verification level', value: `${verification}`, inline: true})
             .addFields({name: 'Server boost', value: `${guild.premiumSubscriptionCount}`, inline: true})
             .setFooter({text: `Server ID : ${guild.id}`})
             .setTimestamp()
