@@ -6,6 +6,6 @@ module.exports = {
 
     //execute
     callback: async (client, interaction) => {
-        reactionEmbed(interaction)
+        await reactionEmbed(interaction)
     }
 }
