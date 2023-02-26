@@ -18,15 +18,11 @@ module.exports = async (interaction) => {
         async (mat) => {
             const dataApi = mat.data[0]
             if (!dataApi){
-                interaction.reply(`An error occurred while trying to find the ${interaction.commandName}. Maybe try another one?`)
+                await interaction.editReply(`An error occurred while trying to find the ${interaction.commandName}. Maybe try another one?`)
                 return
             }
 
-            // handle title
-            let title = dataApi.attributes.titles.en_jp
-            if (!title) {
-                title = dataApi.attributes.titles.en_cn || dataApi.attributes.titles.en_kr
-            }
+            let title = dataApi.attributes.titles.en_jp || dataApi.attributes.titles.en_cn || dataApi.attributes.titles.en_kr
 
             const embed = new EmbedBuilder()
                 .setColor("Random")
