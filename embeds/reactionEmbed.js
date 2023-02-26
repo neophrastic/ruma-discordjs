@@ -1,7 +1,11 @@
 const {get} = require("request-promise");
 const {EmbedBuilder} = require("discord.js");
 
-module.exports = (interaction) => {
+module.exports = async (interaction) => {
+
+    // https://stackoverflow.com/a/68774492/13079820
+    await interaction.reply('Working on it...');
+
     let option = {
         uri: `https://anime-reactions.uzairashraf.dev/api/reactions/random?category=${interaction.commandName}`,
         method: 'GET',
@@ -17,12 +21,12 @@ module.exports = (interaction) => {
 
             const embed = new EmbedBuilder()
                 .setColor("Random")
-                .setTitle(`🡲`)
+                .setTitle(`→`)
                 .setURL(dataApi)
                 .setImage(dataApi)
                 .setFooter({text: `Uzairashraf.dev`})
 
-            await interaction.reply({embeds: [embed]})
+            await interaction.editReply({content: '',embeds: [embed]})
         }
     ).catch((err) => {
         console.log(err)
