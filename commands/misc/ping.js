@@ -3,7 +3,13 @@ module.exports = {
     description: 'Pings the bot and shows the latency',
 
     //execute
-    callback: (client, interaction) => {
-        interaction.reply(`Latency is ${Date.now() - interaction.createdTimestamp}ms. API Latency is ${Math.round(client.ws.ping)}ms`);  
+    callback: async (client, interaction) => {
+        await interaction.deferReply();
+
+        const reply = await interaction.fetchReply();
+
+        const ping =  reply.createdTimestamp - interaction.createdTimestamp;
+
+        interaction.editReply(`Latency is ${ping}ms. API Latency is ${Math.round(client.ws.ping)}ms`);  
     }
 }
