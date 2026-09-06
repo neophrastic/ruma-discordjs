@@ -1,8 +1,8 @@
 const reactionEmbed = require('../../embeds/reactionEmbed.js')
 
 module.exports = {
-    name: 'smug',
-    description: 'Provide an image of you smug',
+    name: 'tableflip',
+    description: 'Provide an image of you flipping a table',
 
     options: [
         {

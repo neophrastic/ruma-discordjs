@@ -1,31 +1,34 @@
-const axios = require("axios");
-const {EmbedBuilder} = require("discord.js");
+const { EmbedBuilder } = require('discord.js')
+const fetchReaction = require('../utils/fetchReaction')
 
 module.exports = async (interaction) => {
-
-    // https://stackoverflow.com/a/68774492/13079820
-    await interaction.reply('Working on it...');
-
     try {
-        const response = await axios.get(
-            `https://anime-reactions.uzairashraf.dev/api/reactions/random?category=${interaction.commandName}`
-        )
-        const mat = response.data
-        let dataApi = mat.reaction
+        await interaction.deferReply()
 
-        // since embed cant show webp, this what i can do lmao
-        if (dataApi === 'https://anime-reactions.uzairashraf.dev/confused/whaa.webp') dataApi = 'https://cdn.discordapp.com/attachments/1077097920492482560/1077920709596172308/whaa.gif'
+        const url = await fetchReaction(interaction.commandName)
+        if (!url) {
+            await interaction.editReply('Something went wrong while fetching a reaction. Please try again later.')
+            return
+        }
 
         const embed = new EmbedBuilder()
-            .setColor("Random")
-            .setTitle(`→`)
-            .setURL(dataApi)
-            .setImage(dataApi)
-            .setFooter({text: `Uzairashraf.dev`})
+            .setColor('Random')
+            .setTitle('→')
+            .setURL(url)
+            .setImage(url)
+            .setFooter({ text: 'Nekos.best' })
 
-        await interaction.editReply({content: '',embeds: [embed]})
+        const target = interaction.options.getUser('user')
+        if (target) {
+            embed.setDescription(`${interaction.user} → ${target}`)
+        }
+
+        await interaction.editReply({ embeds: [embed] })
     } catch (err) {
         console.log(err)
-        await interaction.editReply('Something went wrong while fetching a reaction. Please try again later.')
+        const payload = { content: 'Something went wrong while fetching a reaction. Please try again later.' }
+        interaction.deferred || interaction.replied
+            ? await interaction.editReply(payload)
+            : await interaction.reply({ ...payload, ephemeral: true })
     }
 }

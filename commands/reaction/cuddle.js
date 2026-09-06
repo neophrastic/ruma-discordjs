@@ -1,13 +1,13 @@
 const reactionEmbed = require('../../embeds/reactionEmbed.js')
 
 module.exports = {
-    name: 'smug',
-    description: 'Provide an image of you smug',
+    name: 'cuddle',
+    description: 'Cuddle a user',
 
     options: [
         {
             name: 'user',
-            description: 'User to react at',
+            description: 'User to cuddle',
             type: 6,
             required: false,
         },
