@@ -1,7 +1,7 @@
 # Graph Report - ruma-discordjs  (2026-09-06)
 
 ## Corpus Check
-- 30 files · ~2,707 words
+- 30 files · ~2,750 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `4d503592`
+- Built from commit: `72271c71`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -36,7 +36,7 @@
 6. `dotenv` - 2 edges
 7. `animeMangaEmbed` - 1 edges
 8. `animeMangaEmbed` - 1 edges
-9. `{EmbedBuilder}` - 1 edges
+9. `{ EmbedBuilder }` - 1 edges
 10. `axios` - 1 edges
 
 ## Surprising Connections (you probably didn't know these)
@@ -80,7 +80,7 @@ Cohesion: 0.29
 Nodes (6): Features, Installation and Setup, Prerequisites, Project Structure, Ruma Discord Bot, Usage
 
 ## Knowledge Gaps
-- **56 isolated node(s):** `animeMangaEmbed`, `animeMangaEmbed`, `{EmbedBuilder}`, `axios`, `{EmbedBuilder}` (+51 more)
+- **56 isolated node(s):** `animeMangaEmbed`, `animeMangaEmbed`, `{ EmbedBuilder }`, `axios`, `{EmbedBuilder}` (+51 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **3 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -89,7 +89,7 @@ _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `dependencies` connect `dependencies` to `package.json`?**
   _High betweenness centrality (0.019) - this node is a cross-community bridge._
-- **What connects `animeMangaEmbed`, `animeMangaEmbed`, `{EmbedBuilder}` to the rest of the system?**
+- **What connects `animeMangaEmbed`, `animeMangaEmbed`, `{ EmbedBuilder }` to the rest of the system?**
   _56 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `reactionEmbed.js` be split into smaller, more focused modules?**
   _Cohesion score 0.08695652173913043 - nodes in this community are weakly interconnected._

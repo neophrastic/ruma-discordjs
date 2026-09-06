@@ -988,12 +988,12 @@
     },
     {
       "id": "commands_anime_waifu_embedbuilder",
-      "label": "{EmbedBuilder}",
+      "label": "{ EmbedBuilder }",
       "_origin": "ast",
       "community": 6,
       "community_name": "waifu.js",
       "file_type": "code",
-      "norm_label": "{embedbuilder}",
+      "norm_label": "{ embedbuilder }",
       "source_file": "commands/anime/waifu.js",
       "source_location": "L1"
     },
@@ -1969,5 +1969,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "4d5035925ab6e15de3bc753d57bc0d21be15103e"
+  "built_at_commit": "72271c713effa81bebfb4fbbfa27dcd76d252cb5"
 }
