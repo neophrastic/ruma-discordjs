@@ -9,7 +9,7 @@ const CATEGORIES = [
     'peck', 'poke', 'pout', 'punch', 'run', 'salute', 'shake', 'shocked',
     'shoot', 'shrug', 'sip', 'slap', 'sleep', 'smile', 'smug', 'spin', 'stare',
     'tableflip', 'teehee', 'think', 'thumbsup', 'tickle', 'wag', 'wave',
-    'wink', 'yawn', 'yeet',
+    'wink', 'yawn', 'yeet', 'waifu',
 ]
 
 module.exports = async (category) => {
@@ -17,9 +17,9 @@ module.exports = async (category) => {
         if (!CATEGORIES.includes(category)) return null
 
         const response = await axios.get(`https://nekos.best/api/v2/${category}`)
-        return response.data.results?.[0]?.url ?? null
+        return response.data.results?.[0] ?? null
     } catch (err) {
-        console.log(err)
+        console.error(err)
         return null
     }
 }

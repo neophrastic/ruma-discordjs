@@ -1,3 +1,4 @@
+const { ApplicationCommandOptionType } = require("discord.js");
 const animeMangaEmbed = require("../../embeds/animeMangaEmbed");
 
 module.exports = {
@@ -8,7 +9,7 @@ module.exports = {
         {
             name: "title",
             description: "Manga title to get",
-            type: 3,
+            type: ApplicationCommandOptionType.String,
             required: true
         },
     ],

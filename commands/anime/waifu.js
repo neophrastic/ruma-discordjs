@@ -1,17 +1,15 @@
 const { EmbedBuilder } = require('discord.js')
-const axios = require('axios')
+const fetchReaction = require('../../utils/fetchReaction')
 
 module.exports = {
     name: 'waifu',
     description: 'get random waifu',
 
-    //execute
     callback: async (client, interaction) => {
         try {
             await interaction.deferReply()
 
-            const response = await axios.get('https://nekos.best/api/v2/waifu')
-            const result = response.data.results?.[0]
+            const result = await fetchReaction(interaction.commandName)
 
             if (!result) {
                 await interaction.editReply('An error occurred while trying to find your waifu. Maybe try another one?')

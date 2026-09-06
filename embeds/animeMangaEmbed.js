@@ -3,11 +3,12 @@ const {EmbedBuilder} = require("discord.js");
 
 module.exports = async (interaction) => {
 
-    await interaction.reply('Working on it...');
-
     try {
+        await interaction.reply('Working on it...');
+
+        const query = encodeURIComponent(interaction.options.getString('title'));
         const response = await axios.get(
-            `https://kitsu.io/api/edge/${interaction.commandName}/?filter[text]=${interaction.options.getString('title')}`,
+            `https://kitsu.io/api/edge/${interaction.commandName}/?filter[text]=${query}`,
             { headers: { 'Accept': 'application/vnd.api+json' } }
         )
         const mat = response.data

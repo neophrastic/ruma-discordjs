@@ -10,11 +10,16 @@ module.exports = (client) => {
       eventFiles.sort((a, b) => a > b);
   
       const eventName = eventFolder.replace(/\\/g, '/').split('/').pop();
-  
+
+      const eventFunctions = eventFiles.map((eventFile) => require(eventFile));
+
       client.on(eventName, async (arg) => {
-        for (const eventFile of eventFiles) {
-          const eventFunction = require(eventFile);
-          await eventFunction(client, arg);
+        for (const eventFunction of eventFunctions) {
+          try {
+            await eventFunction(client, arg);
+          } catch (error) {
+            console.error(`Error in "${eventName}" event handler:`, error);
+          }
         }
       });
     }

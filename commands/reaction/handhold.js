@@ -1,3 +1,4 @@
+const { ApplicationCommandOptionType } = require('discord.js');
 const reactionEmbed = require('../../embeds/reactionEmbed.js')
 
 module.exports = {
@@ -8,7 +9,7 @@ module.exports = {
         {
             name: 'user',
             description: 'User to hold hands with',
-            type: 6,
+            type: ApplicationCommandOptionType.User,
             required: false,
         },
     ],

@@ -6,21 +6,22 @@ module.exports = {
 
     //execute
     callback: async (client, interaction) => {
-        const { guild } = interaction
-        const { createdTimestamp, ownerId, description, name, memberCount } = guild
-        const icon = guild.icon ? `https://cdn.discordapp.com/icons/${guild.id}/${guild.icon}.png` : 'https://cdn.discordapp.com/attachments/1077097920492482560/1077448510275858462/default.png'
-        const roles = guild.roles.cache.size
-        const emojis = guild.emojis.cache.size
+        try {
+            const { guild } = interaction
+            const { createdTimestamp, ownerId, description, name, memberCount } = guild
+            const icon = guild.icon ? `https://cdn.discordapp.com/icons/${guild.id}/${guild.icon}.png` : 'https://cdn.discordapp.com/attachments/1077097920492482560/1077448510275858462/default.png'
+            const roles = guild.roles.cache.size
+            const emojis = guild.emojis.cache.size
 
-        // verification level
-        let verification = guild.verificationLevel
-        if (verification === 0) verification = 'None'
-        if (verification === 1) verification = 'Low'
-        if (verification === 2) verification = 'Medium'
-        if (verification === 3) verification = 'High'
-        if (verification === 4) verification = 'Very High'
+            // verification level
+            let verification = guild.verificationLevel
+            if (verification === 0) verification = 'None'
+            if (verification === 1) verification = 'Low'
+            if (verification === 2) verification = 'Medium'
+            if (verification === 3) verification = 'High'
+            if (verification === 4) verification = 'Very High'
 
-        const embed = new EmbedBuilder()
+            const embed = new EmbedBuilder()
             .setColor("Random")
             .setAuthor({name: guild.name, iconURL:icon})
             .setThumbnail(icon)
@@ -35,6 +36,13 @@ module.exports = {
             .setFooter({text: `Server ID : ${guild.id}`})
             .setTimestamp()
 
-        await interaction.reply({embeds: [embed]})
+            await interaction.reply({embeds: [embed]})
+        } catch (error) {
+            console.error(error);
+            const payload = { content: 'Something went wrong. Please try again later.' };
+            interaction.deferred || interaction.replied
+                ? await interaction.editReply(payload)
+                : await interaction.reply({ ...payload, ephemeral: true });
+        }
     }
 }

@@ -15,7 +15,7 @@ module.exports = async (client, interaction) => {
       if (commandObject.permissionsRequired?.length) {
         for (const permission of commandObject.permissionsRequired) {
           if (!interaction.member.permissions.has(permission)) {
-            interaction.reply({
+            await interaction.reply({
               content: 'Not enough permissions.',
               ephemeral: true,
             });
@@ -23,13 +23,13 @@ module.exports = async (client, interaction) => {
           }
         }
       }
-  
+
       if (commandObject.botPermissions?.length) {
         for (const permission of commandObject.botPermissions) {
           const bot = interaction.guild.members.me;
-  
+
           if (!bot.permissions.has(permission)) {
-            interaction.reply({
+            await interaction.reply({
               content: "I don't have enough permissions.",
               ephemeral: true,
             });
@@ -37,9 +37,13 @@ module.exports = async (client, interaction) => {
           }
         }
       }
-  
+
       await commandObject.callback(client, interaction);
     } catch (error) {
-      console.log(`There was an error running this command: ${error}`);
+      console.error(error);
+      const payload = { content: 'Something went wrong. Please try again later.' };
+      interaction.deferred || interaction.replied
+        ? await interaction.editReply(payload)
+        : await interaction.reply({ ...payload, ephemeral: true });
     }
   };

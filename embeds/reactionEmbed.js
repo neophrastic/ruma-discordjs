@@ -5,8 +5,8 @@ module.exports = async (interaction) => {
     try {
         await interaction.deferReply()
 
-        const url = await fetchReaction(interaction.commandName)
-        if (!url) {
+        const result = await fetchReaction(interaction.commandName)
+        if (!result) {
             await interaction.editReply('Something went wrong while fetching a reaction. Please try again later.')
             return
         }
@@ -14,8 +14,8 @@ module.exports = async (interaction) => {
         const embed = new EmbedBuilder()
             .setColor('Random')
             .setTitle('→')
-            .setURL(url)
-            .setImage(url)
+            .setURL(result.url)
+            .setImage(result.url)
             .setFooter({ text: 'Nekos.best' })
 
         const target = interaction.options.getUser('user')

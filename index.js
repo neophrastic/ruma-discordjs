@@ -13,4 +13,7 @@ const client = new Client({
 
 eventHandlers(client)
 
-client.login(process.env.TOKEN)
+client.login(process.env.TOKEN).catch((error) => {
+    console.error('Failed to log in. Check your TOKEN in .env:', error.message);
+    process.exit(1);
+});
