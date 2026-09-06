@@ -4,69 +4,14 @@
   "graph": {},
   "nodes": [
     {
-      "id": "events_ready_01registercommands",
-      "label": "01registerCommands.js",
+      "id": "events_clientready_consolelog",
+      "label": "consoleLog.js",
       "_origin": "ast",
       "community": 0,
-      "community_name": "01registerCommands.js",
+      "community_name": "consoleLog.js",
       "file_type": "code",
-      "norm_label": "01registercommands.js",
-      "source_file": "events/ready/01registerCommands.js",
-      "source_location": "L1"
-    },
-    {
-      "id": "events_ready_01registercommands_arecommandsdifferent",
-      "label": "areCommandsDifferent",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "01registerCommands.js",
-      "file_type": "code",
-      "norm_label": "arecommandsdifferent",
-      "source_file": "events/ready/01registerCommands.js",
-      "source_location": "L3"
-    },
-    {
-      "id": "events_ready_01registercommands_getapplicationcommands",
-      "label": "getApplicationCommands",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "01registerCommands.js",
-      "file_type": "code",
-      "norm_label": "getapplicationcommands",
-      "source_file": "events/ready/01registerCommands.js",
-      "source_location": "L1"
-    },
-    {
-      "id": "events_ready_01registercommands_getlocalcommands",
-      "label": "getLocalCommands",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "01registerCommands.js",
-      "file_type": "code",
-      "norm_label": "getlocalcommands",
-      "source_file": "events/ready/01registerCommands.js",
-      "source_location": "L2"
-    },
-    {
-      "id": "utils_arecommandsdifferent",
-      "label": "areCommandsDifferent.js",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "01registerCommands.js",
-      "file_type": "code",
-      "norm_label": "arecommandsdifferent.js",
-      "source_file": "utils/areCommandsDifferent.js",
-      "source_location": "L1"
-    },
-    {
-      "id": "utils_getapplicationcommands",
-      "label": "getApplicationCommands.js",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "01registerCommands.js",
-      "file_type": "code",
-      "norm_label": "getapplicationcommands.js",
-      "source_file": "utils/getApplicationCommands.js",
+      "norm_label": "consolelog.js",
+      "source_file": "events/clientReady/consoleLog.js",
       "source_location": "L1"
     },
     {
@@ -191,182 +136,6 @@
       "source_location": "L3"
     },
     {
-      "id": "commands_reaction_confused",
-      "label": "confused.js",
-      "_origin": "ast",
-      "community": 10,
-      "community_name": "confused.js",
-      "file_type": "code",
-      "norm_label": "confused.js",
-      "source_file": "commands/reaction/confused.js",
-      "source_location": "L1"
-    },
-    {
-      "id": "commands_reaction_confused_reactionembed",
-      "label": "reactionEmbed",
-      "_origin": "ast",
-      "community": 10,
-      "community_name": "confused.js",
-      "file_type": "code",
-      "norm_label": "reactionembed",
-      "source_file": "commands/reaction/confused.js",
-      "source_location": "L1"
-    },
-    {
-      "id": "commands_reaction_dance",
-      "label": "dance.js",
-      "_origin": "ast",
-      "community": 11,
-      "community_name": "dance.js",
-      "file_type": "code",
-      "norm_label": "dance.js",
-      "source_file": "commands/reaction/dance.js",
-      "source_location": "L1"
-    },
-    {
-      "id": "commands_reaction_dance_reactionembed",
-      "label": "reactionEmbed",
-      "_origin": "ast",
-      "community": 11,
-      "community_name": "dance.js",
-      "file_type": "code",
-      "norm_label": "reactionembed",
-      "source_file": "commands/reaction/dance.js",
-      "source_location": "L1"
-    },
-    {
-      "id": "commands_reaction_happy",
-      "label": "happy.js",
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "happy.js",
-      "file_type": "code",
-      "norm_label": "happy.js",
-      "source_file": "commands/reaction/happy.js",
-      "source_location": "L1"
-    },
-    {
-      "id": "commands_reaction_happy_reactionembed",
-      "label": "reactionEmbed",
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "happy.js",
-      "file_type": "code",
-      "norm_label": "reactionembed",
-      "source_file": "commands/reaction/happy.js",
-      "source_location": "L1"
-    },
-    {
-      "id": "commands_reaction_no",
-      "label": "no.js",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "no.js",
-      "file_type": "code",
-      "norm_label": "no.js",
-      "source_file": "commands/reaction/no.js",
-      "source_location": "L1"
-    },
-    {
-      "id": "commands_reaction_no_reactionembed",
-      "label": "reactionEmbed",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "no.js",
-      "file_type": "code",
-      "norm_label": "reactionembed",
-      "source_file": "commands/reaction/no.js",
-      "source_location": "L1"
-    },
-    {
-      "id": "commands_reaction_smug",
-      "label": "smug.js",
-      "_origin": "ast",
-      "community": 14,
-      "community_name": "smug.js",
-      "file_type": "code",
-      "norm_label": "smug.js",
-      "source_file": "commands/reaction/smug.js",
-      "source_location": "L1"
-    },
-    {
-      "id": "commands_reaction_smug_reactionembed",
-      "label": "reactionEmbed",
-      "_origin": "ast",
-      "community": 14,
-      "community_name": "smug.js",
-      "file_type": "code",
-      "norm_label": "reactionembed",
-      "source_file": "commands/reaction/smug.js",
-      "source_location": "L1"
-    },
-    {
-      "id": "commands_reaction_surprised",
-      "label": "surprised.js",
-      "_origin": "ast",
-      "community": 15,
-      "community_name": "surprised.js",
-      "file_type": "code",
-      "norm_label": "surprised.js",
-      "source_file": "commands/reaction/surprised.js",
-      "source_location": "L1"
-    },
-    {
-      "id": "commands_reaction_surprised_reactionembed",
-      "label": "reactionEmbed",
-      "_origin": "ast",
-      "community": 15,
-      "community_name": "surprised.js",
-      "file_type": "code",
-      "norm_label": "reactionembed",
-      "source_file": "commands/reaction/surprised.js",
-      "source_location": "L1"
-    },
-    {
-      "id": "commands_reaction_thinking",
-      "label": "thinking.js",
-      "_origin": "ast",
-      "community": 16,
-      "community_name": "thinking.js",
-      "file_type": "code",
-      "norm_label": "thinking.js",
-      "source_file": "commands/reaction/thinking.js",
-      "source_location": "L1"
-    },
-    {
-      "id": "commands_reaction_thinking_reactionembed",
-      "label": "reactionEmbed",
-      "_origin": "ast",
-      "community": 16,
-      "community_name": "thinking.js",
-      "file_type": "code",
-      "norm_label": "reactionembed",
-      "source_file": "commands/reaction/thinking.js",
-      "source_location": "L1"
-    },
-    {
-      "id": "commands_reaction_yes",
-      "label": "yes.js",
-      "_origin": "ast",
-      "community": 17,
-      "community_name": "yes.js",
-      "file_type": "code",
-      "norm_label": "yes.js",
-      "source_file": "commands/reaction/yes.js",
-      "source_location": "L1"
-    },
-    {
-      "id": "commands_reaction_yes_reactionembed",
-      "label": "reactionEmbed",
-      "_origin": "ast",
-      "community": 17,
-      "community_name": "yes.js",
-      "file_type": "code",
-      "norm_label": "reactionembed",
-      "source_file": "commands/reaction/yes.js",
-      "source_location": "L1"
-    },
-    {
       "id": "commands_misc_ping",
       "label": "ping.js",
       "_origin": "ast",
@@ -375,17 +144,6 @@
       "file_type": "code",
       "norm_label": "ping.js",
       "source_file": "commands/misc/ping.js",
-      "source_location": "L1"
-    },
-    {
-      "id": "events_ready_consolelog",
-      "label": "consoleLog.js",
-      "_origin": "ast",
-      "community": 19,
-      "community_name": "consoleLog.js",
-      "file_type": "code",
-      "norm_label": "consolelog.js",
-      "source_file": "events/ready/consoleLog.js",
       "source_location": "L1"
     },
     {
@@ -466,11 +224,88 @@
       "source_location": "L2"
     },
     {
+      "id": "utils_getallfiles",
+      "label": "getAllFiles.js",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "eventHandlers.js",
+      "file_type": "code",
+      "norm_label": "getallfiles.js",
+      "source_file": "utils/getAllFiles.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "utils_getallfiles_fs",
+      "label": "fs",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "eventHandlers.js",
+      "file_type": "code",
+      "norm_label": "fs",
+      "source_file": "utils/getAllFiles.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "utils_getallfiles_path",
+      "label": "path",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "eventHandlers.js",
+      "file_type": "code",
+      "norm_label": "path",
+      "source_file": "utils/getAllFiles.js",
+      "source_location": "L2"
+    },
+    {
+      "id": "events_clientready_01registercommands",
+      "label": "01registerCommands.js",
+      "_origin": "ast",
+      "community": 20,
+      "community_name": "01registerCommands.js",
+      "file_type": "code",
+      "norm_label": "01registercommands.js",
+      "source_file": "events/clientReady/01registerCommands.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "events_clientready_01registercommands_arecommandsdifferent",
+      "label": "areCommandsDifferent",
+      "_origin": "ast",
+      "community": 20,
+      "community_name": "01registerCommands.js",
+      "file_type": "code",
+      "norm_label": "arecommandsdifferent",
+      "source_file": "events/clientReady/01registerCommands.js",
+      "source_location": "L3"
+    },
+    {
+      "id": "events_clientready_01registercommands_getapplicationcommands",
+      "label": "getApplicationCommands",
+      "_origin": "ast",
+      "community": 20,
+      "community_name": "01registerCommands.js",
+      "file_type": "code",
+      "norm_label": "getapplicationcommands",
+      "source_file": "events/clientReady/01registerCommands.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "events_clientready_01registercommands_getlocalcommands",
+      "label": "getLocalCommands",
+      "_origin": "ast",
+      "community": 20,
+      "community_name": "01registerCommands.js",
+      "file_type": "code",
+      "norm_label": "getlocalcommands",
+      "source_file": "events/clientReady/01registerCommands.js",
+      "source_location": "L2"
+    },
+    {
       "id": "events_interactioncreate_handlecommands",
       "label": "handleCommands.js",
       "_origin": "ast",
       "community": 20,
-      "community_name": "getLocalCommands.js",
+      "community_name": "01registerCommands.js",
       "file_type": "code",
       "norm_label": "handlecommands.js",
       "source_file": "events/interactionCreate/handleCommands.js",
@@ -481,51 +316,40 @@
       "label": "getLocalCommands",
       "_origin": "ast",
       "community": 20,
-      "community_name": "getLocalCommands.js",
+      "community_name": "01registerCommands.js",
       "file_type": "code",
       "norm_label": "getlocalcommands",
       "source_file": "events/interactionCreate/handleCommands.js",
       "source_location": "L1"
     },
     {
-      "id": "utils_getallfiles",
-      "label": "getAllFiles.js",
+      "id": "utils_arecommandsdifferent",
+      "label": "areCommandsDifferent.js",
       "_origin": "ast",
       "community": 20,
-      "community_name": "getLocalCommands.js",
+      "community_name": "01registerCommands.js",
       "file_type": "code",
-      "norm_label": "getallfiles.js",
-      "source_file": "utils/getAllFiles.js",
+      "norm_label": "arecommandsdifferent.js",
+      "source_file": "utils/areCommandsDifferent.js",
       "source_location": "L1"
     },
     {
-      "id": "utils_getallfiles_fs",
-      "label": "fs",
+      "id": "utils_getapplicationcommands",
+      "label": "getApplicationCommands.js",
       "_origin": "ast",
       "community": 20,
-      "community_name": "getLocalCommands.js",
+      "community_name": "01registerCommands.js",
       "file_type": "code",
-      "norm_label": "fs",
-      "source_file": "utils/getAllFiles.js",
+      "norm_label": "getapplicationcommands.js",
+      "source_file": "utils/getApplicationCommands.js",
       "source_location": "L1"
-    },
-    {
-      "id": "utils_getallfiles_path",
-      "label": "path",
-      "_origin": "ast",
-      "community": 20,
-      "community_name": "getLocalCommands.js",
-      "file_type": "code",
-      "norm_label": "path",
-      "source_file": "utils/getAllFiles.js",
-      "source_location": "L2"
     },
     {
       "id": "utils_getlocalcommands",
       "label": "getLocalCommands.js",
       "_origin": "ast",
       "community": 20,
-      "community_name": "getLocalCommands.js",
+      "community_name": "01registerCommands.js",
       "file_type": "code",
       "norm_label": "getlocalcommands.js",
       "source_file": "utils/getLocalCommands.js",
@@ -536,7 +360,7 @@
       "label": "getAllFiles",
       "_origin": "ast",
       "community": 20,
-      "community_name": "getLocalCommands.js",
+      "community_name": "01registerCommands.js",
       "file_type": "code",
       "norm_label": "getallfiles",
       "source_file": "utils/getLocalCommands.js",
@@ -547,7 +371,7 @@
       "label": "path",
       "_origin": "ast",
       "community": 20,
-      "community_name": "getLocalCommands.js",
+      "community_name": "01registerCommands.js",
       "file_type": "code",
       "norm_label": "path",
       "source_file": "utils/getLocalCommands.js",
@@ -558,10 +382,82 @@
       "label": "AGENTS.md",
       "_origin": "ast",
       "community": 21,
-      "community_name": "AGENTS.md",
+      "community_name": "AGENTS.md \u2014 ruma_bot",
       "file_type": "document",
       "node_kind": "page",
       "norm_label": "agents.md",
+      "source_file": "AGENTS.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "agents_1_role_agent_persona",
+      "label": "1. Role & Agent Persona",
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "AGENTS.md \u2014 ruma_bot",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "1. role & agent persona",
+      "source_file": "AGENTS.md",
+      "source_location": "L7"
+    },
+    {
+      "id": "agents_2_technology_stack_environment",
+      "label": "2. Technology Stack & Environment",
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "AGENTS.md \u2014 ruma_bot",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "2. technology stack & environment",
+      "source_file": "AGENTS.md",
+      "source_location": "L13"
+    },
+    {
+      "id": "agents_3_architecture_project_structure",
+      "label": "3. Architecture & Project Structure",
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "AGENTS.md \u2014 ruma_bot",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "3. architecture & project structure",
+      "source_file": "AGENTS.md",
+      "source_location": "L28"
+    },
+    {
+      "id": "agents_4_coding_standards",
+      "label": "4. Coding Standards",
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "AGENTS.md \u2014 ruma_bot",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "4. coding standards",
+      "source_file": "AGENTS.md",
+      "source_location": "L52"
+    },
+    {
+      "id": "agents_5_copilot_workflow_instructions",
+      "label": "5. Copilot Workflow Instructions",
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "AGENTS.md \u2014 ruma_bot",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "5. copilot workflow instructions",
+      "source_file": "AGENTS.md",
+      "source_location": "L75"
+    },
+    {
+      "id": "agents_agents_md_ruma_bot",
+      "label": "AGENTS.md \u2014 ruma_bot",
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "AGENTS.md \u2014 ruma_bot",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "agents.md \u2014 ruma_bot",
       "source_file": "AGENTS.md",
       "source_location": "L1"
     },
@@ -570,19 +466,19 @@
       "label": "graphify",
       "_origin": "ast",
       "community": 21,
-      "community_name": "AGENTS.md",
+      "community_name": "AGENTS.md \u2014 ruma_bot",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "graphify",
       "source_file": "AGENTS.md",
-      "source_location": "L1"
+      "source_location": "L84"
     },
     {
       "id": "readme",
       "label": "README.md",
       "_origin": "ast",
       "community": 22,
-      "community_name": "README.md",
+      "community_name": "Ruma Discord Bot",
       "file_type": "document",
       "node_kind": "page",
       "norm_label": "readme.md",
@@ -590,16 +486,76 @@
       "source_location": "L1"
     },
     {
+      "id": "readme_features",
+      "label": "Features",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "Ruma Discord Bot",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "features",
+      "source_file": "README.md",
+      "source_location": "L5"
+    },
+    {
+      "id": "readme_installation_and_setup",
+      "label": "Installation and Setup",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "Ruma Discord Bot",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "installation and setup",
+      "source_file": "README.md",
+      "source_location": "L21"
+    },
+    {
+      "id": "readme_prerequisites",
+      "label": "Prerequisites",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "Ruma Discord Bot",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "prerequisites",
+      "source_file": "README.md",
+      "source_location": "L11"
+    },
+    {
+      "id": "readme_project_structure",
+      "label": "Project Structure",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "Ruma Discord Bot",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "project structure",
+      "source_file": "README.md",
+      "source_location": "L52"
+    },
+    {
       "id": "readme_ruma_discord_bot",
       "label": "Ruma Discord Bot",
       "_origin": "ast",
       "community": 22,
-      "community_name": "README.md",
+      "community_name": "Ruma Discord Bot",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "ruma discord bot",
       "source_file": "README.md",
       "source_location": "L1"
+    },
+    {
+      "id": "readme_usage",
+      "label": "Usage",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "Ruma Discord Bot",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "usage",
+      "source_file": "README.md",
+      "source_location": "L72"
     },
     {
       "id": "package_dependencies",
@@ -734,6 +690,17 @@
       "source_location": "L1"
     },
     {
+      "id": "embeds_animemangaembed_axios",
+      "label": "axios",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "animeMangaEmbed.js",
+      "file_type": "code",
+      "norm_label": "axios",
+      "source_file": "embeds/animeMangaEmbed.js",
+      "source_location": "L1"
+    },
+    {
       "id": "embeds_animemangaembed_embedbuilder",
       "label": "{EmbedBuilder}",
       "_origin": "ast",
@@ -745,14 +712,113 @@
       "source_location": "L2"
     },
     {
-      "id": "embeds_animemangaembed_get",
-      "label": "{get}",
+      "id": "commands_reaction_angry",
+      "label": "angry.js",
       "_origin": "ast",
-      "community": 4,
-      "community_name": "animeMangaEmbed.js",
+      "community": 5,
+      "community_name": "reactionEmbed.js",
       "file_type": "code",
-      "norm_label": "{get}",
-      "source_file": "embeds/animeMangaEmbed.js",
+      "norm_label": "angry.js",
+      "source_file": "commands/reaction/angry.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "commands_reaction_angry_reactionembed",
+      "label": "reactionEmbed",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "reactionEmbed.js",
+      "file_type": "code",
+      "norm_label": "reactionembed",
+      "source_file": "commands/reaction/angry.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "commands_reaction_confused",
+      "label": "confused.js",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "reactionEmbed.js",
+      "file_type": "code",
+      "norm_label": "confused.js",
+      "source_file": "commands/reaction/confused.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "commands_reaction_confused_reactionembed",
+      "label": "reactionEmbed",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "reactionEmbed.js",
+      "file_type": "code",
+      "norm_label": "reactionembed",
+      "source_file": "commands/reaction/confused.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "commands_reaction_dance",
+      "label": "dance.js",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "reactionEmbed.js",
+      "file_type": "code",
+      "norm_label": "dance.js",
+      "source_file": "commands/reaction/dance.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "commands_reaction_dance_reactionembed",
+      "label": "reactionEmbed",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "reactionEmbed.js",
+      "file_type": "code",
+      "norm_label": "reactionembed",
+      "source_file": "commands/reaction/dance.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "commands_reaction_happy",
+      "label": "happy.js",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "reactionEmbed.js",
+      "file_type": "code",
+      "norm_label": "happy.js",
+      "source_file": "commands/reaction/happy.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "commands_reaction_happy_reactionembed",
+      "label": "reactionEmbed",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "reactionEmbed.js",
+      "file_type": "code",
+      "norm_label": "reactionembed",
+      "source_file": "commands/reaction/happy.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "commands_reaction_no",
+      "label": "no.js",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "reactionEmbed.js",
+      "file_type": "code",
+      "norm_label": "no.js",
+      "source_file": "commands/reaction/no.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "commands_reaction_no_reactionembed",
+      "label": "reactionEmbed",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "reactionEmbed.js",
+      "file_type": "code",
+      "norm_label": "reactionembed",
+      "source_file": "commands/reaction/no.js",
       "source_location": "L1"
     },
     {
@@ -778,6 +844,94 @@
       "source_location": "L1"
     },
     {
+      "id": "commands_reaction_smug",
+      "label": "smug.js",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "reactionEmbed.js",
+      "file_type": "code",
+      "norm_label": "smug.js",
+      "source_file": "commands/reaction/smug.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "commands_reaction_smug_reactionembed",
+      "label": "reactionEmbed",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "reactionEmbed.js",
+      "file_type": "code",
+      "norm_label": "reactionembed",
+      "source_file": "commands/reaction/smug.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "commands_reaction_surprised",
+      "label": "surprised.js",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "reactionEmbed.js",
+      "file_type": "code",
+      "norm_label": "surprised.js",
+      "source_file": "commands/reaction/surprised.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "commands_reaction_surprised_reactionembed",
+      "label": "reactionEmbed",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "reactionEmbed.js",
+      "file_type": "code",
+      "norm_label": "reactionembed",
+      "source_file": "commands/reaction/surprised.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "commands_reaction_thinking",
+      "label": "thinking.js",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "reactionEmbed.js",
+      "file_type": "code",
+      "norm_label": "thinking.js",
+      "source_file": "commands/reaction/thinking.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "commands_reaction_thinking_reactionembed",
+      "label": "reactionEmbed",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "reactionEmbed.js",
+      "file_type": "code",
+      "norm_label": "reactionembed",
+      "source_file": "commands/reaction/thinking.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "commands_reaction_yes",
+      "label": "yes.js",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "reactionEmbed.js",
+      "file_type": "code",
+      "norm_label": "yes.js",
+      "source_file": "commands/reaction/yes.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "commands_reaction_yes_reactionembed",
+      "label": "reactionEmbed",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "reactionEmbed.js",
+      "file_type": "code",
+      "norm_label": "reactionembed",
+      "source_file": "commands/reaction/yes.js",
+      "source_location": "L1"
+    },
+    {
       "id": "embeds_reactionembed",
       "label": "reactionEmbed.js",
       "_origin": "ast",
@@ -785,6 +939,17 @@
       "community_name": "reactionEmbed.js",
       "file_type": "code",
       "norm_label": "reactionembed.js",
+      "source_file": "embeds/reactionEmbed.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "embeds_reactionembed_axios",
+      "label": "axios",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "reactionEmbed.js",
+      "file_type": "code",
+      "norm_label": "axios",
       "source_file": "embeds/reactionEmbed.js",
       "source_location": "L1"
     },
@@ -800,17 +965,6 @@
       "source_location": "L2"
     },
     {
-      "id": "embeds_reactionembed_get",
-      "label": "{get}",
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "reactionEmbed.js",
-      "file_type": "code",
-      "norm_label": "{get}",
-      "source_file": "embeds/reactionEmbed.js",
-      "source_location": "L1"
-    },
-    {
       "id": "commands_anime_waifu",
       "label": "waifu.js",
       "_origin": "ast",
@@ -822,6 +976,17 @@
       "source_location": "L1"
     },
     {
+      "id": "commands_anime_waifu_axios",
+      "label": "axios",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "waifu.js",
+      "file_type": "code",
+      "norm_label": "axios",
+      "source_file": "commands/anime/waifu.js",
+      "source_location": "L2"
+    },
+    {
       "id": "commands_anime_waifu_embedbuilder",
       "label": "{EmbedBuilder}",
       "_origin": "ast",
@@ -831,17 +996,6 @@
       "norm_label": "{embedbuilder}",
       "source_file": "commands/anime/waifu.js",
       "source_location": "L1"
-    },
-    {
-      "id": "commands_anime_waifu_get",
-      "label": "{get}",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "waifu.js",
-      "file_type": "code",
-      "norm_label": "{get}",
-      "source_file": "commands/anime/waifu.js",
-      "source_location": "L2"
     },
     {
       "id": "commands_info_serverinfo",
@@ -885,28 +1039,6 @@
       "file_type": "code",
       "norm_label": "{embedbuilder }",
       "source_file": "commands/info/userinfo.js",
-      "source_location": "L1"
-    },
-    {
-      "id": "commands_reaction_angry",
-      "label": "angry.js",
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "angry.js",
-      "file_type": "code",
-      "norm_label": "angry.js",
-      "source_file": "commands/reaction/angry.js",
-      "source_location": "L1"
-    },
-    {
-      "id": "commands_reaction_angry_reactionembed",
-      "label": "reactionEmbed",
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "angry.js",
-      "file_type": "code",
-      "norm_label": "reactionembed",
-      "source_file": "commands/reaction/angry.js",
       "source_location": "L1"
     }
   ],
@@ -1092,6 +1224,42 @@
       "weight": 1.0
     },
     {
+      "source": "events_clientready_01registercommands",
+      "target": "utils_getapplicationcommands",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "events/clientReady/01registerCommands.js",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "events_clientready_01registercommands",
+      "target": "utils_getlocalcommands",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "events/clientReady/01registerCommands.js",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "events_clientready_01registercommands",
+      "target": "utils_arecommandsdifferent",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "events/clientReady/01registerCommands.js",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
       "source": "events_interactioncreate_handlecommands",
       "target": "utils_getlocalcommands",
       "relation": "imports_from",
@@ -1101,42 +1269,6 @@
       "context": "import",
       "source_file": "events/interactionCreate/handleCommands.js",
       "source_location": "L1",
-      "weight": 1.0
-    },
-    {
-      "source": "events_ready_01registercommands",
-      "target": "utils_getapplicationcommands",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "events/ready/01registerCommands.js",
-      "source_location": "L1",
-      "weight": 1.0
-    },
-    {
-      "source": "events_ready_01registercommands",
-      "target": "utils_getlocalcommands",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "events/ready/01registerCommands.js",
-      "source_location": "L2",
-      "weight": 1.0
-    },
-    {
-      "source": "events_ready_01registercommands",
-      "target": "utils_arecommandsdifferent",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "events/ready/01registerCommands.js",
-      "source_location": "L3",
       "weight": 1.0
     },
     {
@@ -1177,13 +1309,79 @@
     },
     {
       "source": "agents",
-      "target": "agents_graphify",
+      "target": "agents_agents_md_ruma_bot",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "AGENTS.md",
       "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_agents_md_ruma_bot",
+      "target": "agents_2_technology_stack_environment",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_agents_md_ruma_bot",
+      "target": "agents_3_architecture_project_structure",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_agents_md_ruma_bot",
+      "target": "agents_4_coding_standards",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": "L52",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_agents_md_ruma_bot",
+      "target": "agents_1_role_agent_persona",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_agents_md_ruma_bot",
+      "target": "agents_5_copilot_workflow_instructions",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": "L75",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_agents_md_ruma_bot",
+      "target": "agents_graphify",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": "L84",
       "weight": 1.0
     },
     {
@@ -1221,7 +1419,7 @@
     },
     {
       "source": "commands_anime_waifu",
-      "target": "commands_anime_waifu_get",
+      "target": "commands_anime_waifu_axios",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -1364,7 +1562,7 @@
     },
     {
       "source": "embeds_animemangaembed",
-      "target": "embeds_animemangaembed_get",
+      "target": "embeds_animemangaembed_axios",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -1386,7 +1584,7 @@
     },
     {
       "source": "embeds_reactionembed",
-      "target": "embeds_reactionembed_get",
+      "target": "embeds_reactionembed_axios",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -1407,6 +1605,39 @@
       "weight": 1.0
     },
     {
+      "source": "events_clientready_01registercommands",
+      "target": "events_clientready_01registercommands_getapplicationcommands",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "events/clientReady/01registerCommands.js",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "events_clientready_01registercommands",
+      "target": "events_clientready_01registercommands_getlocalcommands",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "events/clientReady/01registerCommands.js",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "events_clientready_01registercommands",
+      "target": "events_clientready_01registercommands_arecommandsdifferent",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "events/clientReady/01registerCommands.js",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
       "source": "events_interactioncreate_handlecommands",
       "target": "events_interactioncreate_handlecommands_getlocalcommands",
       "relation": "contains",
@@ -1415,39 +1646,6 @@
       "confidence_score": 1.0,
       "source_file": "events/interactionCreate/handleCommands.js",
       "source_location": "L1",
-      "weight": 1.0
-    },
-    {
-      "source": "events_ready_01registercommands",
-      "target": "events_ready_01registercommands_getapplicationcommands",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "events/ready/01registerCommands.js",
-      "source_location": "L1",
-      "weight": 1.0
-    },
-    {
-      "source": "events_ready_01registercommands",
-      "target": "events_ready_01registercommands_getlocalcommands",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "events/ready/01registerCommands.js",
-      "source_location": "L2",
-      "weight": 1.0
-    },
-    {
-      "source": "events_ready_01registercommands",
-      "target": "events_ready_01registercommands_arecommandsdifferent",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "events/ready/01registerCommands.js",
-      "source_location": "L3",
       "weight": 1.0
     },
     {
@@ -1671,6 +1869,61 @@
       "weight": 1.0
     },
     {
+      "source": "readme_ruma_discord_bot",
+      "target": "readme_prerequisites",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_ruma_discord_bot",
+      "target": "readme_installation_and_setup",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_ruma_discord_bot",
+      "target": "readme_features",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_ruma_discord_bot",
+      "target": "readme_project_structure",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L52",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_ruma_discord_bot",
+      "target": "readme_usage",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L72",
+      "weight": 1.0
+    },
+    {
       "source": "utils_getallfiles",
       "target": "utils_getallfiles_fs",
       "relation": "contains",
@@ -1716,5 +1969,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "f5723fb500201b2b3b3935fc4342e96762fa1e49"
+  "built_at_commit": "4d5035925ab6e15de3bc753d57bc0d21be15103e"
 }
